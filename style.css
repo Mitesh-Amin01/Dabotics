@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #e7feff;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    align-items: center;
+}
+nav{
+    transition: all 0.6s ease;
+}
+.nav{
+    position: absolute;
+    width: 100%;
+}
+nav i{
+    margin-right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.nav ul{
+    display: grid;
+    justify-content: end;
+    margin: 0px 10px;
+}
+.nav ul li{
+    background: white;
+    border-bottom: 2px solid red;
+    text-align: center;
+    list-style: none;
+    padding: 10px 20px;
+}
+.nav ul li:hover{
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid gray;
+}
+.nav ul li:hover a{
+    color: white;
+}
+.nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+}
+section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    padding: 40px 40px;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.clock_Conter{
+    color: rgb(255, 162, 162);
+}
+.footer{
+    margin-top: 92px;
+    display: grid;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+@media (min-width:300px) and (max-width:660px) {
+    .clock{
+        font-size: 20px;
+    }
+    .header h1{
+        font-size: 20px;
+    }
+    
+}
+@media (min-width:150px) and (max-width:300px) {
+    .clock{
+        font-size: 10px;
+    }
+    .header h1{
+        font-size: 10px;
+    }
+    .footer p{
+        font-size: 10px;
+    }
+    
+}

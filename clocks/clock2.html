@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body{
+            background: black;
+        }
+        #h1{
+            color: rgb(32, 236, 255);
+        }
+        .clock{
+            box-shadow: rgba(0, 234, 255, 0.25) 0px 54px 55px, rgba(0, 234, 255, 0.12) 0px -12px 30px, rgba(0, 242, 255, 0.12) 0px 4px 6px, rgba(0, 234, 255, 0.17) 0px 12px 13px, rgba(255, 0, 0, 0.09) 0px -3px 5px;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <h1>Online Time Web-Site</h1>
+        </header>
+        <nav>
+            <i class='bx bx-menu' onclick="menu()"></i>
+        </nav>
+    </div>
+    <div class="nav" id="test" style="display: none;">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./clock1.html">Clock-1</a></li>
+            <li><a href="./clock2.html">Clock-2</a></li>
+        </ul>
+    </div>
+    <section>
+        <div class="clock">
+            <div class="clock_Conter">
+                <h1 id="h1"></h1>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p>This is a Debotics Task-1</p>
+        </div>
+    </footer>
+</body>
+<script src="../script.js"></script>
+</html>

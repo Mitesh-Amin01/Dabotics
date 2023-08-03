@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build the Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="cont">
+        <div class="cal">
+            <div class="heading">
+                <button><i class='bx bx-sun' id="toggle"></i></button>
+            </div>
+            <div class="display">
+                <input type="text" name="" id="number" placeholder="0">
+            </div>
+            <div class="button">
+                <div class="btn">
+                    <button id="modulo" value="%" onclick="setValue('modulo')">%</button>
+                </div>
+                <div class="btn">
+                    <button id="ce" value="" onclick="coddinet()"><</button>
+                </div>
+                <div class="btn">
+                    <button id="ae" >AC</button>
+                </div>
+                <div class="btn">
+                    <button id="divide" value="/" onclick="setValue('divide')">÷</button>
+                </div>
+                <div class="btn">
+                    <button id="7" value="7" onclick="setValue('7')">7</button>
+                </div>
+                <div class="btn">
+                    <button id="8" value="8" onclick="setValue('8')">8</button>
+                </div>
+                <div class="btn">
+                    <button id="9" value="9" onclick="setValue('9')">9</button>
+                </div>
+                <div class="btn">
+                    <button id="x" value="*" onclick="setValue('x')">X</button>
+                </div>
+                <div class="btn">
+                    <button id="4" value="4" onclick="setValue('4')">4</button>
+                </div>
+                <div class="btn">
+                    <button id="5" value="5" onclick="setValue('5')">5</button>
+                </div>
+                <div class="btn">
+                    <button id="6" value="6" onclick="setValue('6')">6</button>
+                </div>
+                <div class="btn">
+                    <button id="-" value="-" onclick="setValue('-')">-</button>
+                </div>
+                <div class="btn">
+                    <button id="1" value="1" onclick="setValue('1')">1</button>
+                </div>
+                <div class="btn">
+                    <button id="2" value="2" onclick="setValue('2')">2</button>
+                </div>
+                <div class="btn">
+                    <button id="3" value="3" onclick="setValue('3')">3</button>
+                </div>
+                <div class="btn">
+                    <button id="+" value="+" onclick="setValue('+')">+</button>
+                </div>
+                <div class="btn">
+                    <button id="0" value="0" onclick="setValue('0')">0</button>
+                </div>
+                <div class="btn">
+                    <button id="." value="." onclick="setValue('.')">.</button>
+                </div>
+                <div class="btn">
+                    <button id="^" value="^" onclick="setValue('^')">^</button>
+                </div>
+                <div class="btn">
+                    <button id="√" value="√" onclick="setValue('√')">√</button>
+                </div>
+                <div class="btn">
+                    <button id="sin" value="sin" onclick="setValue('sin')">Sin</button>
+                </div>
+                <div class="btn">
+                    <button id="cos" value="cos" onclick="setValue('cos')">Cos</button>
+                </div>
+                <div class="btn">
+                    <button id="ten" value="ten" onclick="setValue('ten')">Tan</button>
+                </div>
+                <div class="btn">
+                    <button id="log" value="log" onclick="setValue('log')">log</button>
+                </div>
+                <div class="btn">
+                    <button style="background: #a160fb;" onclick="test()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
